@@ -7,6 +7,9 @@ To install STTtool, you simply need to run the following command in your termina
 make install
 ```
 
+## Downloading Models
+You can download pretrained models from [here](https://huggingface.co/ggerganov/whisper.cpp).
+
 ## Usage
 You can use the STTtool by providing it with paths to the input audio file, the pretrained model, and the output text file as command line arguments.
 
