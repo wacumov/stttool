@@ -33,7 +33,7 @@ struct STTTool: AsyncParsableCommand {
             )
 
             let segments = try await whisper.transcribe(audioFrames: audioFrames)
-            let output = segments.map(\.text).joined(separator: "\n")
+            let output = segments.map(\.text).joined(separator: "\n\n\n")
 
             try output.write(
                 to: URL(fileURLWithPath: outputFilePath),
